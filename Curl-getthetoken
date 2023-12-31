@@ -1,0 +1,9 @@
+curl --location 'https://login.microsoftonline.com/{yourtenant}/oauth2/v2.0/token' \
+--header 'Content-Type: application/json' \
+--data '{
+    "grant_type":"client_credentials",
+    "client_id":"e2af646c-aaaaaa-03ycbf3",
+    "scope":"https://ossrdbms-aad.database.windows.net/.default",
+    "requested_token_use":"on_behalf_of",
+    "client_secret":"yourclientsecret"
+}'
